@@ -1,7 +1,17 @@
-export const getEnvVariable = () => {
-    import.meta.env;
+// export const getEnvVariable = () => {
+//     import.meta.env;
 
+//     return {
+//         ...import.meta.env
+//     }
+// }
+
+export const getEnvVariable = () => {
     return {
-        ...import.meta.env
-    }
-}
+        VITE_API_URL: import.meta.env.VITE_API_URL,
+        VITE_MODE: import.meta.env.VITE_OTHER_VAR,
+
+        
+        // Añade aquí las demás variables de entorno que necesites
+    };
+};
